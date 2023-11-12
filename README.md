@@ -1,12 +1,12 @@
-# TetraNyoTengu
-Fastest Scalar &amp; Vector memmem() in C - Linux/Windows tool
+# TetraNyoTengu - Fastest Scalar & Vector memmem() in C - Linux/Windows tool
+Both functions are 100% FREE, no license needed.
 
 This is a practical console tool demonstarting how to use Fastest Needle-in-Haystack Searcher, written in C.
 As a rival, 'ripgrep' latest version was used.
 
 ![NyoTengu_booklet pdf](https://github.com/Sanmayce/TetraNyoTengu/assets/14062548/f99f7034-97dc-4694-98cd-f0bc0ab5544c)
 
-Bottom-line, first:
+Bottom-line, first:  
 TetraNyoTengu (with 4 OpenMP threads, AVX2 variant) is roughly 0.575/0.059=9.74x faster than 'ripgrep' v13, C rules.
 
 TetraNyoTengu (compiled with GCC v11.3.0 compiler) reaches (on laptop with i5-7200U, DDR4 2133MHz, Windows 10):
@@ -107,6 +107,8 @@ Process Time =     6.203 =  271%    Virtual  Memory =   1360 MB
 Global  Time =     2.281 =  100%    Physical Memory =   1359 MB
 ```
 
+![Results_i5-7200u_Windows10 txt](https://github.com/Sanmayce/TetraNyoTengu/assets/14062548/28e2b213-5df0-44ca-8190-ae4740c1d175)
+
 Latest superfast grep-like tool written in Rust:
 ```
 D:\Benchmark_Linus-Torvalds_SCALAR-VECTOR_2023>timer64 "ripgrep-13.0.0-x86_64-pc-windows-gnu.exe" -c -F --stats "Linus Torvalds" linux-6.6.1.tar
@@ -127,6 +129,8 @@ Process Time =     0.562 =   97%    Virtual  Memory =      5 MB
 Global  Time =     0.575 =  100%    Physical Memory =   1360 MB
 ```
 
-Enfun!
-2023-Nov-12
+![Results_i5-7200u_Windows10 txt P2](https://github.com/Sanmayce/TetraNyoTengu/assets/14062548/b2ecfb27-3dbc-4db6-a356-3c43c832b4c6)
+
+Enfun!  
+2023-Nov-12  
 Sanmayce
